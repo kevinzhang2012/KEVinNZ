@@ -3,13 +3,34 @@
 html,
 body {
     position: relative;
-    height:100%;
+    height: 100%;
     background-color: #55a1c1;
 }
 
-#root, .App, .Home {
-    height:100%;
+#root,
+.App,
+.Home {
+    height: 100%;
 }
+
+.nav-tabs {
+    border-bottom-color: transparent;
+}
+
+
+/*.hp-loading-icon {
+    display: inline;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -9;
+}*/
+
+.logo-image-nav {
+    height: 40px;
+}
+
 
 /*Common used*/
 
@@ -195,9 +216,11 @@ button:hover {
 
 
 /*section4*/
+
 #section-4 {
-    margin-bottom:150px;
+    margin-bottom: 150px;
 }
+
 
 /*LinkedIn badge */
 

@@ -4,7 +4,6 @@ import Scroll from 'react-scroll';
 class Header extends Component {
     render() {
         var Link       = Scroll.Link;
-        var Element    = Scroll.Element;
         return (
             // Navbar
             <nav className="navbar navbar-toggleable-sm navbar-light bg-faded fixed-top">
@@ -12,7 +11,7 @@ class Header extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="container">
-                    <a className="navbar-brand" href="https://kevinzhang2012.github.io/kevinnz/home">KEVINNZ</a>
+                    <a className="navbar-brand" href="https://kevinzhang2012.github.io/kevinnz-react"><img className="logo-image-nav" src={require("../assets/logo.png")} /></a>
                     <div className="collapse navbar-collapse" id="navbar-content">
                         <ul className="nav nav-tabs navbar-nav mr-auto mt-2 mt-md-0">
                             <li className="nav-item">

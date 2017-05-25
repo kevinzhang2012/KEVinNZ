@@ -1,14 +1,30 @@
 import React, { Component } from 'react';
-import ScrollReveal from 'scrollreveal';
+import sr from '../js/scrollReveal.js';
+import Scroll from 'react-scroll';
 
 class Home extends Component {
+    componentDidMount = () => {
+        const config_exp = {
+            origin: 'left',
+            duration: 1000,
+            delay: 150,
+            distance: '500px',
+            scale: 1,
+            easing: 'ease',
+            reset: true,
+        }
+        const config_hp = {
+            delay: 500,
+        }
+        sr.reveal(".experience-item", config_exp);
+        sr.reveal("#section-1", config_hp);
+    }
+
     render() {
-        //  sr.reveal('#section-3');
-        // sr.reveal('.bar');
+        var Link = Scroll.Link; // Define <Link> for on-click scroll
         return (
 
             <div className="Home">
-
                 {/*section-1*/}
                 <div id="section-1" className="hp-background shadow-black animated fadeIn">
                     <div className="padding-top-200px">
@@ -28,9 +44,9 @@ class Home extends Component {
                                 Sign In</button>
                         </div>
                     </div>
-                    <a href="#section-2" id="hp-arrowdown">
+                    <Link to="section-2" smooth={true} offset={-50} duration={500} id="hp-arrowdown">
                         <i className="fa fa-chevron-circle-down fa-3x animated bounce infinite" id="hp-downarrow" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                 </div>
 
                 {/*section-2*/}
@@ -99,13 +115,13 @@ class Home extends Component {
                 </div>
 
                 {/*section-4*/}
-                <div name='section-3' id="section-4" className="padding-80px background-color-white">
+                <div id="section-4" className="padding-80px background-color-white">
                     <div className="container">
                         <h1 className="display-4 center-block color-blue">
                             Experience
           </h1>
                         <hr />
-                        <div className="experience-item">
+                        <div ref="exp" className="experience-item">
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
@@ -124,7 +140,7 @@ class Home extends Component {
                                 </div>
                             </blockquote>
                         </div>
-                        <div className="experience-item">
+                        <div ref="exp" className="experience-item">
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
@@ -139,7 +155,7 @@ class Home extends Component {
                                 </div>
                             </blockquote>
                         </div>
-                        <div className="experience-item">
+                        <div ref="exp" className="experience-item">
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
@@ -213,7 +229,6 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-
 
             </div>
 
