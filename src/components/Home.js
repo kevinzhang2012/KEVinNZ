@@ -15,9 +15,9 @@ class Home extends Component {
             reset: true,
         }
         const config_hp = {
-            origin:'top',
-            distance:'700px',
-            scale:1,
+            origin: 'top',
+            distance: '700px',
+            scale: 1,
             easing: 'ease',
             duration: 1000,
             delay: 500,
@@ -26,14 +26,14 @@ class Home extends Component {
         sr.reveal("#section-1", config_hp);
     }
     render() {
-        
+
         var Link = Scroll.Link; // Define <Link> for on-click scroll
         return (
 
             <div className="Home">
                 {/*section-1*/}
                 <div id="section-1" className="hp-background">
-                     <Particles style={{position:"absolute"}} />
+                    <Particles style={{ position: "absolute" }} />
                     <div className="padding-top-200px">
                         <div className="hp-textblock animated fadeInUp">
                             <h1 id="hp-greeting">WELCOME</h1>
@@ -70,24 +70,23 @@ class Home extends Component {
                             <div className="carousel-inner" role="listbox">
                                 <div className="carousel-item active embed-responsive embed-responsive-16by9">
                                     <img className="d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/1.jpg")} alt="First slide" />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <div className="carousel-caption d-md-block">
                                         <h3>KEVINNZ</h3>
-                                        <p>A personal website used to promote myself. Built with Angular 2 + BootStrap 4 + .NET Web API</p>
+                                        <p>Just a personal website.</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item embed-responsive embed-responsive-16by9">
                                     <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/2.jpg")} alt="Second slide" />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <div className="carousel-caption d-md-block">
                                         <h3>Workbook Online</h3>
-                                        <p>Workbook Online was a web application aimed to provide online collaborative diagramming and presentation features. The project itself has adopted Angular 2 + Ruby On Rails stacks.</p>
+                                        <p>A web application providing online collaborative diagramming and presentation features.</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item embed-responsive embed-responsive-16by9">
                                     <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/3.jpg")} alt="Third slide" />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <div className="carousel-caption d-md-block">
                                         <h3>MEET.U</h3>
-                                        <p>A practice of building web social network with my developer friends. Mainly implemented with AngularJS and ASP.NET in a responsive design. Took part in front-end development includes designing and functioning for the index page.
-                  </p>
+                                        <p>A practice of building web social network with my developer friends. </p>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +112,7 @@ class Home extends Component {
                                 <div className="LI-profile-badge center-block" data-version="v1" data-size="large" data-locale="zh_CN" data-type="vertical" data-theme="light" data-vanity="kevinzhang1994"><a className="LI-simple-link" href="https://nz.linkedin.com/in/kevinzhang1994?trk=profile-badge">Yuxiang Zhang</a></div>
                             </div>
                             <div className="col-md-7 col-lg-7">
-                                <p className="lead padding-20px">Hiya! My name is Kevin Zhang. I am pursuing my Computer Science degree at Auckland University of Technology. <br />I love both coding and designing, and am skilled in Web Development/ASP.NET Application/Database and etc. <br /><br />
+                                <p className="lead padding-20px"><br />Hiya! My name is Kevin Zhang. I am pursuing my Computer Science postgraduate study at Auckland University of Technology. <br />I love coding and designing. And I have experience in Web Development / ASP.NET Development / Database. <br /><br />
                                     <a className="btn btn-outline-danger" target="_blank" href="https://drive.google.com/open?id=0B4plXY9Tu-H6X1R6SEc0OEU3dU0"><i className="fa fa-file-pdf-o" aria-hidden="true" /> Resume</a>
                                 </p>
                             </div>
@@ -179,7 +178,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-
+                {/*footer_transparent*/}
+                <div className="footer_transparent"></div>
                 {/*Modal*/}
                 <div className="modal fade" id="signup-modal" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog" role="document">

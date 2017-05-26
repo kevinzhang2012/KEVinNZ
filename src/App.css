@@ -22,7 +22,8 @@ a.nav-link.active {
 }
 
 a.nav-link {
-    width: 150%;
+    width: 110px;
+    margin: auto;
 }
 
 
@@ -193,11 +194,22 @@ button:hover {
 }
 
 #hp-carsousel {
+    max-height: 450px;
+    background-color: #313131;
     max-width: 550px;
     left: 50%;
     transform: translate(-50%, -0);
     border: 10px solid white;
     box-shadow: 0px 1px 10px #3a3a3a;
+}
+
+.carousel-item {
+    overflow: visible;
+    margin-bottom: 50%;
+}
+
+.carousel-caption {
+    top: 90%;
 }
 
 .hp-textblock {
@@ -221,13 +233,6 @@ button:hover {
 #hp-jobtitle {
     color: white;
     padding-bottom: 15px;
-}
-
-
-/*section4*/
-
-#section-4 {
-    margin-bottom: 150px;
 }
 
 

@@ -6,7 +6,7 @@ class Header extends Component {
         var Link = Scroll.Link;
         return (
             // Navbar
-            <div class="navbarWrapper">
+            <div className="navbarWrapper">
                 <nav className="navbar navbar-toggleable-sm navbar-inverse bg-faded fixed-top background-color-blue color-white">
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
