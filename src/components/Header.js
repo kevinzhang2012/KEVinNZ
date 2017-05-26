@@ -7,22 +7,22 @@ class Header extends Component {
         return (
             // Navbar
             <div class="navbarWrapper">
-                <nav className="navbar navbar-toggleable-sm navbar-light bg-faded fixed-top">
+                <nav className="navbar navbar-toggleable-sm navbar-inverse bg-faded fixed-top background-color-blue color-white">
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="container">
                         <a className="navbar-brand" href="https://kevinzhang2012.github.io/kevinnz-react"><img className="logo-image-nav" src={require("../assets/logo.png")} /></a>
                         <div className="collapse navbar-collapse" id="navbar-content">
-                            <ul className="nav nav-tabs navbar-nav mr-auto mt-2 mt-md-0">
-                                <li className="nav-item">
-                                    <Link activeClass="active" to="section-1" spy={true} smooth={true} offset={-50} duration={500} className="nav-link"><i className="fa fa-home" aria-hidden="true"></i> HOME</Link>
+                            <ul className="nav navbar-nav mr-auto mt-2 mt-md-0 row">
+                                <li className="nav-item col-md-3 col-lg-3">
+                                    <Link activeClass="active" to="section-1" spy={true} smooth={true} offset={-50} duration={500} className="nav-link">HOME</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link activeClass="active" to="section-2" spy={true} smooth={true} offset={-50} duration={500} className="nav-link" ><i className="fa fa-code" aria-hidden="true"></i> PROJECTS</Link>
+                                <li className="nav-item col-md-3 col-lg-3">
+                                    <Link activeClass="active" to="section-2" spy={true} smooth={true} offset={-50} duration={500} className="nav-link" >PROJECTS</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link activeClass="active" to="section-3" spy={true} smooth={true} offset={-50} duration={500} className="nav-link"><i className="fa fa-info-circle" aria-hidden="true"></i> ABOUT</Link>
+                                <li className="nav-item col-md-3 col-lg-3">
+                                    <Link activeClass="active" to="section-3" spy={true} smooth={true} offset={-50} duration={500} className="nav-link">ABOUT</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link disabled"><i className="fa fa-camera-retro" aria-hidden="true"></i> GALLERY</a>

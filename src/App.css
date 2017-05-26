@@ -13,8 +13,16 @@ body {
     height: 100%;
 }
 
-.nav-tabs {
-    border-bottom-color: transparent;
+a.nav-link.active {
+    border-bottom: 4px solid rgba(204, 90, 109, 0.72);
+}
+
+.nav-item {
+    text-align: center;
+}
+
+a.nav-link {
+    width: 150%;
 }
 
 
@@ -122,11 +130,8 @@ button:hover {
     display: inline;
 }
 
-.navbar {
-    box-shadow: 0px 1px 10px #3a3a3a;
-}
-
 .navbar-toggler {
+    color: white;
     z-index: 9999;
 }
 
@@ -196,7 +201,7 @@ button:hover {
 }
 
 .hp-textblock {
-    background-color: rgba(41, 41, 41, 0.5);
+    background-color: rgba(58, 57, 57, 0.05);
     text-align: center;
 }
 

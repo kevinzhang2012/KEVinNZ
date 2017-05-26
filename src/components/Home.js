@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import sr from '../js/scrollReveal.js';
 import Scroll from 'react-scroll';
+import Particles from 'react-particles-js';
 
 class Home extends Component {
     componentDidMount = () => {
@@ -14,19 +15,25 @@ class Home extends Component {
             reset: true,
         }
         const config_hp = {
+            origin:'top',
+            distance:'700px',
+            scale:1,
+            easing: 'ease',
+            duration: 1000,
             delay: 500,
         }
         sr.reveal(".experience-item", config_exp);
         sr.reveal("#section-1", config_hp);
     }
-
     render() {
+        
         var Link = Scroll.Link; // Define <Link> for on-click scroll
         return (
 
             <div className="Home">
                 {/*section-1*/}
                 <div id="section-1" className="hp-background shadow-black animated fadeIn">
+                     <Particles style={{position:"absolute"}} />
                     <div className="padding-top-200px">
                         <div className="hp-textblock animated fadeInUp">
                             <h1 id="hp-greeting">WELCOME</h1>
@@ -62,21 +69,21 @@ class Home extends Component {
                             </ol>
                             <div className="carousel-inner" role="listbox">
                                 <div className="carousel-item active embed-responsive embed-responsive-16by9">
-                                    <img className="d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/1.jpg" alt="First slide" />
+                                    <img className="d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/1.jpg")} alt="First slide" />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h3>KEVINNZ</h3>
                                         <p>A personal website used to promote myself. Built with Angular 2 + BootStrap 4 + .NET Web API</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item embed-responsive embed-responsive-16by9">
-                                    <img className=" d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/2.jpg" alt="Second slide" />
+                                    <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/2.jpg")} alt="Second slide" />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h3>Workbook Online</h3>
                                         <p>Workbook Online was a web application aimed to provide online collaborative diagramming and presentation features. The project itself has adopted Angular 2 + Ruby On Rails stacks.</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item embed-responsive embed-responsive-16by9">
-                                    <img className=" d-block img-fluid embed-responsive-item" src="../../assets/homepage_carsousel/3.jpg" alt="Third slide" />
+                                    <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/3.jpg")} alt="Third slide" />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h3>MEET.U</h3>
                                         <p>A practice of building web social network with my developer friends. Mainly implemented with AngularJS and ASP.NET in a responsive design. Took part in front-end development includes designing and functioning for the index page.
