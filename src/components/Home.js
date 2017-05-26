@@ -32,7 +32,7 @@ class Home extends Component {
 
             <div className="Home">
                 {/*section-1*/}
-                <div id="section-1" className="hp-background shadow-black animated fadeIn">
+                <div id="section-1" className="hp-background">
                      <Particles style={{position:"absolute"}} />
                     <div className="padding-top-200px">
                         <div className="hp-textblock animated fadeInUp">
