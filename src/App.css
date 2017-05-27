@@ -81,6 +81,10 @@ button:hover {
     background-color: #55a1c1;
 }
 
+.background-color-pink {
+    background-color: #d46f81;
+}
+
 .background-color-white {
     background-color: #fbfbfb;
 }
@@ -175,14 +179,19 @@ button:hover {
 }
 
 #section-2 {
-    top: 100%;
     width: 100%;
 }
 
 #section-3 {
-    top: 200%;
     width: 100%;
-    border-bottom: 1px solid #d8d7d7;
+}
+
+.section-3-icons {
+    padding-top: 20px;
+}
+
+.section-3-net-icon {
+    height: 48px;
 }
 
 #section-4 {
@@ -209,7 +218,8 @@ button:hover {
 }
 
 .carousel-caption {
-    top: 90%;
+    font-size: 2vh;
+    top: 85%;
 }
 
 .hp-textblock {

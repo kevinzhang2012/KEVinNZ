@@ -79,14 +79,14 @@ class Home extends Component {
                                     <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/2.jpg")} alt="Second slide" />
                                     <div className="carousel-caption d-md-block">
                                         <h3>Workbook Online</h3>
-                                        <p>A web application providing online collaborative diagramming and presentation features.</p>
+                                        <p>A web based collaborative whiteboard application. Proposed by Ping Du, <a href="http://www.xorro.com/products/workbook">@Xorro</a></p>
                                     </div>
                                 </div>
                                 <div className="carousel-item embed-responsive embed-responsive-16by9">
                                     <img className=" d-block img-fluid embed-responsive-item" src={require("../assets/homepage_carsousel/3.jpg")} alt="Third slide" />
                                     <div className="carousel-caption d-md-block">
                                         <h3>MEET.U</h3>
-                                        <p>A practice of building web social network with my developer friends. </p>
+                                        <p>A practice of building web social network with my developer friends. <a href="https://github.com/Mooophy">@Mooophy</a> <a href="https://github.com/rong4188">@rong4188</a> <a href="https://github.com/scottszb1987">@feedfedfat</a> <a href="https://github.com/Jinpeiqi">@Jinpeiqi</a> ...</p>
                                     </div>
                                 </div>
                             </div>
@@ -103,19 +103,33 @@ class Home extends Component {
                 </div>
 
                 {/*section-3*/}
-                <div id="section-3" className="padding-80px background-color-white">
-                    <div className="container">
+                <div id="section-3" className="background-color-white">
+                    <div className="container padding-80px">
                         <h1 className="display-4 center-block color-blue">About Me</h1>
                         <hr />
                         <div className="row padding-top-40px">
-                            <div className="col-md-5 col-lg-5">
+                            <div className="col-md-6 col-lg-5">
                                 <div className="LI-profile-badge center-block" data-version="v1" data-size="large" data-locale="zh_CN" data-type="vertical" data-theme="light" data-vanity="kevinzhang1994"><a className="LI-simple-link" href="https://nz.linkedin.com/in/kevinzhang1994?trk=profile-badge">Yuxiang Zhang</a></div>
                             </div>
-                            <div className="col-md-7 col-lg-7">
-                                <p className="lead padding-20px"><br />Hiya! My name is Kevin Zhang. I am pursuing my Computer Science postgraduate study at Auckland University of Technology. <br />I love coding and designing. And I have experience in Web Development / ASP.NET Development / Database. <br /><br />
+                            <div className="col-md-6 col-lg-7">
+                                <p className="lead padding-20px"><br />Hiya! My name is Kevin Zhang. I am pursuing my Computer Science postgraduate study at Auckland University of Technology. <br />I have a great passion on coding and designing. Since in school, I have developed skills and experiences in a range of programming lanuages and software frameworks. <br /><br />
                                     <a className="btn btn-outline-danger" target="_blank" href="https://drive.google.com/open?id=0B4plXY9Tu-H6X1R6SEc0OEU3dU0"><i className="fa fa-file-pdf-o" aria-hidden="true" /> Resume</a>
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                    <div className="container-fluid color-white">
+                        <div className="row">
+                            <div className="section-3-icons col-sm-4 col-md-4 col-lg-4 center-block background-color-blue">
+                                <i className="fa fa-database fa-3x" aria-hidden="true"></i><br /><p>Database Development</p>
+                            </div>
+                            <div className="section-3-icons col-sm-4 col-md-4 col-lg-4 center-block background-color-pink">
+                                <i className="fa fa-desktop fa-3x" aria-hidden="true"></i><br /><p>Responsive Web Development</p>
+                            </div>
+                            <div className="section-3-icons col-sm-4 col-md-4 col-lg-4 center-block background-color-blue">
+                                <img className="section-3-net-icon" src={require("../assets/homepage_section_3/net-icon.png")} /><br /><p>.NET Application / MVC Framework</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -140,8 +154,7 @@ class Home extends Component {
                                         <i className="fa fa-map-marker" aria-hidden="true" /> Xorro Solutions Ltd. Auckland
                 </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">During my study break, I joined Xorro team and worked as a full-time web developer. The project "Workbook Online" was a web application aimed to provide online collaborative diagraming and presentation features. The project itself
-                    has adopted Angular 2 + Ruby On Rails stacks.</footer>
+                                        <footer className="blockquote-footer color-grey">During my study break, I joined Xorro team and worked as a full-time web developer. The project "Workbook Online" was a web application aimed to provide online collaborative diagraming and whiteboarding features. The project was built with Angular 2 + Ruby On Rails.</footer>
                                     </div>
                                 </div>
                             </blockquote>
@@ -156,7 +169,7 @@ class Home extends Component {
                                         <strong>Personal Website</strong>
                                     </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">This is a responsive designed personal website which is used to promote myself. The site is built with Angular 2 + Bootstrap 4 + .NET Web API and planned to be deployed at AWS EC2. Temporary deploy: https://kevinzhang2012.github.io/kevinnz</footer>
+                                        <footer className="blockquote-footer color-grey">This is a responsive designed personal website which is used to promote myself. The site is built with React + Bootstrap 4 + .NET Web API and planned to be deployed at AWS EC2. Temporary deploy: https://kevinzhang2012.github.io/kevinnz</footer>
                                     </div>
                                 </div>
                             </blockquote>
@@ -171,7 +184,7 @@ class Home extends Component {
                                         <strong>Practice project “MeetU”</strong>
                                     </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">A practice of building web social network with my developer friends. Mainly implemented with AngularJS and ASP.NET in a responsive design. Took part in front-end development including designing and functioning for index page.</footer>
+                                        <footer className="blockquote-footer color-grey">A practice of building web social network with my developer friends. Implemented with AngularJS and .NET MVC with a responsive design. I took part in the front-end development.</footer>
                                     </div>
                                 </div>
                             </blockquote>
