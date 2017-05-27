@@ -5,16 +5,16 @@ import Particles from 'react-particles-js';
 
 class Home extends Component {
     componentDidMount = () => {
-        const config_exp = {
+        const config_slideInLeft = {
             origin: 'left',
             duration: 1000,
-            delay: 150,
-            distance: '500px',
+            delay: 50,
+            distance: '300px',
             scale: 1,
             easing: 'ease',
             reset: true,
         }
-        const config_hp = {
+        const config_slideInTop = {
             origin: 'top',
             distance: '700px',
             scale: 1,
@@ -22,8 +22,18 @@ class Home extends Component {
             duration: 1000,
             delay: 500,
         }
-        sr.reveal(".experience-item", config_exp);
-        sr.reveal("#section-1", config_hp);
+        const config_fadeIn = {
+            origin: 'bottom',
+            duration: 1000,
+            delay: 50,
+            distance: '50px',
+            scale: 1,
+            easing: 'ease',
+            reset: true,
+        }
+        sr.reveal(".experience-item", config_slideInLeft);
+        sr.reveal("#section-1", config_slideInTop);
+        sr.reveal(".section-3-icons", config_fadeIn);
     }
     render() {
 
