@@ -12,7 +12,7 @@ class Home extends Component {
             distance: '300px',
             scale: 1,
             easing: 'ease',
-            reset: true,
+            reset: false,
         }
         const config_slideInTop = {
             origin: 'top',
@@ -123,7 +123,7 @@ class Home extends Component {
                             </div>
                             <div className="col-md-6 col-lg-7">
                                 <p className="lead padding-20px"><br />Hiya! My name is Kevin Zhang. I am pursuing my Computer Science postgraduate study at Auckland University of Technology. <br />I have a great passion on coding and designing. Since in school, I have developed skills and experiences in a range of programming lanuages and software frameworks. <br /><br />
-                                    <a className="btn btn-outline-danger" target="_blank" href="https://drive.google.com/open?id=0B4plXY9Tu-H6X1R6SEc0OEU3dU0"><i className="fa fa-file-pdf-o" aria-hidden="true" /> Resume</a>
+                                    <a className="btn btn-outline-danger" target="_blank" href="https://drive.google.com/open?id=0B4plXY9Tu-H6c3c3UEY5UHVMWms"><i className="fa fa-file-pdf-o" aria-hidden="true" /> Resume</a>
                                 </p>
                             </div>
                         </div>
@@ -155,16 +155,16 @@ class Home extends Component {
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
-                                        <p className="lead color-blue">Nov, 2016 – Feb, 2017</p>
+                                        <p className="lead color-blue">Nov 2016 – Feb 2017</p>
                                     </div>
                                     <div className="col">
-                                        <strong>Web Developer (Internship)</strong>
+                                        <strong>[Internship] Web Developer</strong>
                                     </div>
                                     <div className="col">
                                         <i className="fa fa-map-marker" aria-hidden="true" /> Xorro Solutions Ltd. Auckland
                 </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">During my study break, I joined Xorro team and worked as a full-time web developer. The project "Workbook Online" was a web application aimed to provide online collaborative diagraming and whiteboarding features. The project was built with Angular 2 + Ruby On Rails.</footer>
+                                        <footer className="blockquote-footer color-grey">During my study break, I joined developer team of Xorro Solutions, and worked as a full-time web developer. We worked on building a web application providing online collaborative white boarding and diagramming features. The project was built with Angular 2 and Ruby On Rails, involving usage of web API and Single Page Application development.</footer>
                                     </div>
                                 </div>
                             </blockquote>
@@ -173,13 +173,14 @@ class Home extends Component {
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
-                                        <p className="lead color-blue">Feb, 2017</p>
+                                        <p className="lead color-blue">Feb 2017</p>
                                     </div>
                                     <div className="col">
-                                        <strong>Personal Website</strong>
+                                        <strong>[Freelance] Personal Website</strong>
                                     </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">This is a responsive designed personal website which is used to promote myself. The site is built with React + Bootstrap 4 + .NET Web API and planned to be deployed at AWS EC2. Temporary deploy: https://kevinzhang2012.github.io/kevinnz</footer>
+                                        <footer className="blockquote-footer color-grey">This is a personal website used to promote myself. The site is built with React framework + Bootstrap 4 + .NET Web API, and it was planned to be deployed using cloud service provider such as AWS.
+Link: http://kevinzhang.top/</footer>
                                     </div>
                                 </div>
                             </blockquote>
@@ -188,13 +189,32 @@ class Home extends Component {
                             <blockquote className="blockquote">
                                 <div className="row">
                                     <div className="col-12">
-                                        <p className="lead color-blue">May, 2016</p>
+                                        <p className="lead color-blue">May 2016</p>
                                     </div>
                                     <div className="col">
-                                        <strong>Practice project “MeetU”</strong>
+                                        <strong>[Freelance] Social Network Application - MeetU</strong>
                                     </div>
                                     <div className="col-12">
-                                        <footer className="blockquote-footer color-grey">A practice of building web social network with my developer friends. Implemented with AngularJS and .NET MVC with a responsive design. I took part in the front-end development.</footer>
+                                        <footer className="blockquote-footer color-grey">A practice of building web social network with my developer friends. I took part in the front-end development. The project was implemented with AngularJS and ASP.NET MVC with a responsive design.<br /><a href="https://github.com/kevinzhang2012/meetu" target="_blank"> Source</a> / <a href="https://trello.com/b/gfeCbpJT/meetu" target="_blank"> Discussion</a></footer>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+                                                <div ref="exp" className="experience-item">
+                            <blockquote className="blockquote">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <p className="lead color-blue">Feb 2012 – Feb 2013</p>
+                                    </div>
+                                    <div className="col">
+                                        <strong>Technical Assistant (Part-Time)</strong>
+                                    </div>
+                                    <div className="col">
+                                        <i className="fa fa-map-marker" aria-hidden="true" /> FrontEast Ltd. Auckland
+                </div>
+                                    <div className="col-12">
+                                        <footer className="blockquote-footer color-grey">Joined a company running medium-scale Internet cafe. Worked as part-time and assisted in a range of activities including hardware management, LAN constructing and server maintenance.</footer>
                                     </div>
                                 </div>
                             </blockquote>

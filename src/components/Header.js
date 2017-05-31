@@ -12,7 +12,7 @@ class Header extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="container">
-                        <a className="navbar-brand" href="https://kevinzhang2012.github.io/kevinnz-react"><img className="logo-image-nav" src={require("../assets/logo.png")} /></a>
+                        <a className="navbar-brand" href="http://kevinzhang.top"><img className="logo-image-nav" src={require("../assets/logo.png")} /></a>
                         <div className="collapse navbar-collapse" id="navbar-content">
                             <ul className="nav navbar-nav mr-auto mt-2 mt-md-0 row">
                                 <li className="nav-item col-md-3 col-lg-3">
