@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).<br>
-Deployed at: https://kevinzhang2012.github.io/kevinnz
+Deployed at: http://kevinzhang.top
 
 NPM packages/ JS libraries included:
 - Bootstrap 4
